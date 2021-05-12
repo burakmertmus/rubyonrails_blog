@@ -9,3 +9,4 @@ App.comments = App.cable.subscriptions.create "CommentsChannel",
 
   received: (data) ->
     @collection().append(data['comment'])
+    
