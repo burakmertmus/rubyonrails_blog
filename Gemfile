@@ -49,7 +49,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 	
 
-goup :production do
+group :production do
 	gem 'pg'
-	gem 'agile-refuge-21209'
+	gem 'rails_12factor'
 end
