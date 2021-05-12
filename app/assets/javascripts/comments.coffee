@@ -1,5 +1,4 @@
 App.comments = App.cable.subscriptions.create "CommentsChannel",
-  collection: -> $('#comments')
 
   connected: ->
   
@@ -8,5 +7,5 @@ App.comments = App.cable.subscriptions.create "CommentsChannel",
   
 
   received: (data) ->
-    @collection().append(data['comment'])
+    $('#comments').append data.comment
     
