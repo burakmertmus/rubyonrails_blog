@@ -6,4 +6,4 @@ test:
 
 production:
   adapter: redis
-  url: redis://https://agile-refuge-21209.herokuapp.com/
+  url: redis://:p60ecc24613a2636ffb4260bdd44d0b315b76bff4987b3a729838440fac1d7a98@ec2-34-224-185-81.compute-1.amazonaws.com:27690

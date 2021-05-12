@@ -42,7 +42,7 @@ Rails.application.configure do
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   # config.force_ssl = true
   config.web_socket_server_url = "wss://agile-refuge-21209.herokuapp.com/cable" 
-  config.action_cable.allowed_request_origins = ['https://agile-refuge-21209.herokuapp.com', 'http://agile-refuge-21209.herokuapp.com']
+  config.action_cable.allowed_request_origins = ['https://agile-refuge-21209.herokuapp.com', /http:\/\/agile-refuge-21209.herokuapp.com*/]
   # Use the lowest log level to ensure availability of diagnostic information
   # when problems arise.
   config.log_level = :debug
