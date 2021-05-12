@@ -8,4 +8,3 @@ App.comments = App.cable.subscriptions.create "CommentsChannel",
 
   received: (data) ->
     $('#comments').append data.comment
-    
