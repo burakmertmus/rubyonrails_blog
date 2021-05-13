@@ -4,7 +4,5 @@ App.comments = App.cable.subscriptions.create "CommentsChannel",
   
   disconnected: ->
 
-  
-
   received: (data) ->
     $('#comments').append data.comment
