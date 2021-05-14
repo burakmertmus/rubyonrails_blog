@@ -9,6 +9,13 @@ class CommentsController < ApplicationController
 		
 		redirect_to @post
 	end
+
+
+	def destroy
+		@comment = @post.comments.find_by (params [: id])
+		@post.comment.destroy
+		redirect_to @post
+	end
 	
 	private
 		def set_post
