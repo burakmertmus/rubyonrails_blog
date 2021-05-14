@@ -1,1 +1,1 @@
-<%= comment.body %> -- <%= comment.created_at.to_s(:long) %> -- <%= link_to 'delete' comment, :method => :delete %>
+<%= comment.body %> -- <%= comment.created_at.to_s(:long) %> -- <%= link_to "Delete",[comment.post, comment], method: :delete, data:{confirm: "Are you sure? "}, class: "button is-danger" %>
