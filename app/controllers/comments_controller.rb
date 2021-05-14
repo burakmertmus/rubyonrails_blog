@@ -14,6 +14,7 @@ class CommentsController < ApplicationController
 	    @post = @post.comments.find(params[:post_id])
 	    @comment = @post.find(params[:id]).comments
 	    @comment.destroy
+	    CommentsChannel.broadcast(comment)
 	    
 	    redirect_to @post
     end
