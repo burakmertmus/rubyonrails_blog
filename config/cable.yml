@@ -6,4 +6,4 @@ test:
 
 production:
   adapter: redis
-  url: redis://agile-refuge-21209.herokuapp.com:/cable
+  url: redis://agile-refuge-21209.herokuapp.com:/cable/
