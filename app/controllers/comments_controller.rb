@@ -9,7 +9,7 @@ class CommentsController < ApplicationController
 		
 		redirect_to @post
 	end
-
+	
 	private
 		def set_post
 			@post = Post.find(params[:post_id])
