@@ -1,6 +1,2 @@
 <p><%= comment.body %> -- <%= comment.created_at.to_s(:long) %></p>
-<p>
-  <%= link_to 'Destroy Comment', comment,
-               method: :delete,
-               data: { confirm: 'Are you sure?' } %>
-</p>
+<p><%= link_to 'delete' comment, :method => :delete %></p>
