@@ -1,1 +1,1 @@
-<%= comment.body %> -- <%= comment.created_at.to_s(:long) %> -- <%= link_to "Delete", post_comment_path(@post, comment), method: :delete %>
+<%= comment.body %> -- <%= comment.created_at.to_s(:long) %> -- <%= link_to 'delete' comment, :method => :delete %>
