@@ -1,10 +1,10 @@
 development:
-  adapter: 'async'
-  url: 'redis://localhost:6379/1'
+  adapter: async
+  
 
 test:
   adapter: async
 
 production:
-  adapter: 'redis'
-  url: 'redis://:p859c33d79fc6b0f60622800afd2724b653b1512dfceba9c0aaecbec7d99e4208@ec2-3-94-48-138.compute-1.amazonaws.com:25360'
+  adapter: redis
+  url: redis://:p859c33d79fc6b0f60622800afd2724b653b1512dfceba9c0aaecbec7d99e4208@ec2-3-94-48-138.compute-1.amazonaws.com:25360
