@@ -25,6 +25,7 @@ Rails.application.configure do
 
     config.cache_store = :null_store
   end
+  
 
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
@@ -47,7 +48,7 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
-
+  config.action_cable.url = "ws://agile-refuge-21209.herokuapp.com/cable"
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   # config.file_watcher = ActiveSupport::EventedFileUpdateChecker
