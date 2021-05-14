@@ -11,11 +11,10 @@ class CommentsController < ApplicationController
 	end
 	
 	def destroy
-	    @post = @post.comments.find(params[:post_id])
-	    @comment = @post.find(params[:id]).comments
+	    @comment = @post.comments.find(params[:id])
 	    @comment.destroy
-	    CommentsChannel.broadcast(comment)
-	    
+	    #CommentsChannel.broadcast(comment)
+
 	    redirect_to @post
     end
 	
