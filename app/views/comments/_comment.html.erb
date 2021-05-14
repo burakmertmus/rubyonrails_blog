@@ -1,1 +1,1 @@
-<br><%= comment.body %> -- <%= comment.created_at.to_s(:long) %> <p style="background: red"> <%= link_to "Delete",[comment.post, comment], method: :delete, data:{confirm: "Are you sure? " class: "a-primary"} %> </p><br>
+<br><%= comment.body %> -- <%= comment.created_at.to_s(:long) %> <p style="background: red"> <%= link_to "Delete",[comment.post, comment], method: :delete, data:{confirm: "Are you sure? "} %> </p><br>
