@@ -10,9 +10,7 @@ class CommentsController < ApplicationController
 		redirect_to @post
 	end
 
-
-	def destroy
-		@comment = @post.comments.find_by (params [: id])
+	def destoy
 		@post.comment.destroy
 		redirect_to @post
 	end
