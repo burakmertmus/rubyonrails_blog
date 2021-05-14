@@ -10,17 +10,17 @@ class CommentsController < ApplicationController
 		redirect_to @post
 	end
 
-	def destoy
-		@comment = Comment.find(params[:id])
-		@comment = @post.comments.find(comment_params)
-		@comment.destroy
-		
-
-		respond_to do |format|
-            format.html { redirect_to @post }
-            format.js
-        end
-	end
+	#def destoy
+	#	@comment = Comment.find(params[:id])
+	#	@comment = @post.comments.find(comment_params)
+	#	@comment.destroy
+	#
+	#
+	#	respond_to do |format|
+    #        format.html { redirect_to @post }
+    #        format.js
+    #    end
+	#end
 	
 	private
 		def set_post
