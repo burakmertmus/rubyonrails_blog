@@ -12,8 +12,9 @@ class CommentsController < ApplicationController
 
 	def destoy
 		@comment = Comment.find(params[:id])
+		@comment = @post.comments.find(comment_params)
 		@comment.destroy
-		redirect_to @post
+		
 
 		respond_to do |format|
             format.html { redirect_to @post }
