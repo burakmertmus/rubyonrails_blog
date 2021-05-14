@@ -11,14 +11,21 @@ class CommentsController < ApplicationController
 	end
 
 	def destoy
-		@post.comment.destroy
+		@comment = Comment.find(params[:id])
+		@comment.destroy
 		redirect_to @post
+
+		respond_to do |format|
+            format.html { redirect_to @post }
+            format.js
+        end
 	end
 	
 	private
 		def set_post
 			@post = Post.find(params[:post_id])
 		end
+
 
 		def comments_params
 			params.required(:comment).permit(:body)
