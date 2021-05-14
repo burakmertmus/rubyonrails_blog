@@ -13,7 +13,7 @@ class CommentsController < ApplicationController
 	def destroy
 	    @comment = @post.comments.find(params[:id])
 	    @comment.destroy
-	    #CommentsChannel.broadcast(comment)
+	    CommentsChannel.broadcast(comment)
 
 	    redirect_to @post
     end
